@@ -19,4 +19,4 @@
 @import url('components/social-links.css');
 
 /* MQ */
-@import url('/styles/setup/mq.css');
+@import url('setup/mq.css');
