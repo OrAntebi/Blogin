@@ -1,15 +1,15 @@
 @font-face {
     font-family: Lato-regular;
-    src: url('/fonts/Lato/Lato-Regular.ttf');
+    src: url('../../fonts/Lato/Lato-Regular.ttf');
 }
 
 @font-face {
     font-family: Lato-bold;
     font-weight: 700;
-    src: url('/fonts/Lato/Lato-Bold.ttf');
+    src: url('../../fonts/Lato/Lato-Bold.ttf');
 }
 
 @font-face {
     font-family: Eurofurence;
-    src: url('/fonts/Eurofurence/eurof55.ttf');
+    src: url('../../fonts/Eurofurence/eurof55.ttf');
 }
