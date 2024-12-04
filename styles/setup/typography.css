@@ -1,15 +1,27 @@
 @font-face {
     font-family: Lato-regular;
+<<<<<<< HEAD
     src: url('../../fonts/Lato/Lato-Regular.ttf');
+=======
+    src: url('/fonts/Lato/Lato-Regular.ttf');
+>>>>>>> 6ae28bb03d536e8705df681e0b0254f5fd3521c5
 }
 
 @font-face {
     font-family: Lato-bold;
     font-weight: 700;
+<<<<<<< HEAD
     src: url('../../fonts/Lato/Lato-Bold.ttf');
+=======
+    src: url('/fonts/Lato/Lato-Bold.ttf');
+>>>>>>> 6ae28bb03d536e8705df681e0b0254f5fd3521c5
 }
 
 @font-face {
     font-family: Eurofurence;
+<<<<<<< HEAD
     src: url('../../fonts/Eurofurence/eurof55.ttf');
+=======
+    src: url('/fonts/Eurofurence/eurof55.ttf');
+>>>>>>> 6ae28bb03d536e8705df681e0b0254f5fd3521c5
 }
