@@ -1,6 +1,6 @@
 /* Mobile */
 
-@media (width < 800px) {
+@media (max-width: 799px) {
 
     .main-nav {
         position: fixed;
@@ -93,7 +93,7 @@
 
 /* Tablet */
 
-@media (width >=800px) {
+@media (min-width: 800px) {
     .card {
         flex-direction: column;
 
@@ -107,7 +107,7 @@
 
 /* Desktop */
 
-@media (width >=1080px) {
+@media (min-width: 1080px) {
 
     .card {
         flex-direction: row;
