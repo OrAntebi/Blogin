@@ -1,16 +1,23 @@
 .main-footer {
     flex-direction: column;
+
     height: 315px;
+    padding-inline: 10px;
+
     background-color: var(--clr-primary-5);
     border-block-start: var(--booder);
 }
 
 .main-footer .logo {
-    color: var(--clr-primary2);
     margin-block-end: 30px;
+    
+    color: var(--clr-primary2);
 }
 
 .main-footer p {
+    text-align: center;
+
     font-size: 0.8125em;
     color: var(--clr-primary-2);
-}
+    text-wrap: pretty;
+}    

@@ -10,6 +10,7 @@
         height: 100%;
         width: 40%;
 
+        opacity: 0;
         transform: translateX(100%);
         transition: transform 0.7s ease-in-out;
         background-color: #cccccce5;
@@ -40,6 +41,7 @@
 
     body.openedMenu {
         .main-nav {
+            opacity: 1;
             transform: translateX(0%);
         }
 
