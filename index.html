@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogin</title>
+    <script src="https://kit.fontawesome.com/0ed047b375.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body class="main-layout">
+
+    <div class="overlay" onclick="onToggleMenu()"></div>
+
+    <header class="main-header main-layout full">
+        <div class="logo mid-left flex align-center">Blogin</div>
+        <i class="menu-icon fa-solid fa-bars mid-right" onclick="onToggleMenu()"></i>
+        <nav class="main-nav mid-right">
+            <ul class="flex clean-list">
+                <li class="flex align-center justify-center" onclick="onToggleMenu()"><a href="#">Journal</a></li>
+                <li class="flex align-center justify-center" onclick="onToggleMenu()"><a href="#">About</a></li>
+                <li class="flex align-center justify-center" onclick="onToggleMenu()"><a href="#">Work</a></li>
+                <li class="flex align-center justify-center" onclick="onToggleMenu()"><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <div class="card">
+            <img src="/images/001.png" alt="" class="card-img">
+            <section class="card-details">
+                <h2 class="card-title">Duis aute irure dolor in henderit in voluptate.</h2>
+                <p class="card-text">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                    ex
+                    ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p class="card-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                    fugiat nulla pariatur...</p>
+                <button class="continue-reading-btn">Continue Reading</button>
+            </section>
+        </div>
+        <div class="card">
+            <img src="/images/002.png" alt="" class="card-img">
+            <section class="card-details">
+                <h2 class="card-title">Duis aute irure dolor in henderit in voluptate.</h2>
+                <p class="card-text">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                    ex
+                    ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p class="card-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                    fugiat
+                    nulla pariatur...</p>
+                <button class="continue-reading-btn">Continue Reading</button>
+            </section>
+        </div>
+        <div class="card">
+            <img src="/images/003.png" alt="" class="card-img">
+            <section class="card-details">
+                <h2 class="card-title">Duis aute irure dolor in henderit in voluptate.</h2>
+                <p class="card-text">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                    ex
+                    ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p class="card-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                    fugiat
+                    nulla pariatur...</p>
+                <button class="continue-reading-btn">Continue Reading</button>
+            </section>
+        </div>
+
+        <section class="main-pagination flex align-center space-between">
+            <button class="previous-btn">Previous</button>
+            <button class="next-btn">Next</button>
+        </section>
+    </main>
+
+    <footer class="main-footer full flex align-center justify-center">
+        <div class="logo">Blogin</div>
+        <p class="footer-text">© 2014 Blogin.com - All Rights Reserved - Find more free Templates at Pixelhint.com</p>
+        <ul class="social-links flex clean-list align-center justify-center">
+            <li><img src="/images/facebook-icon.png" alt="Facebook icon"></li>
+            <li><img src="/images/twitter-icon.png" alt="Twitter icon"></li>
+            <li><img src="/images/behance-icon.png" alt="Behance icon"></li>
+            <li><img src="/images/dribbble-icon.png" alt="Dribbble icon"></li>
+        </ul>
+    </footer>
+
+    <script>
+        function onToggleMenu() {
+            document.body.classList.toggle('openedMenu')
+        }
+    </script>
+</body>
+
+</html>

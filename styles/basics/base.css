@@ -1,0 +1,47 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    color: var(--clr-primary);
+    font-family: Lato-regular, sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+h2 {
+    margin-block: 0 2.142857142857143em;
+
+    color: var(--clr-primary1);
+    font-family: Lato-bold;
+    font-size: 1.75rem;
+    text-wrap: balance;
+    text-transform: uppercase;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+    margin-block-end: 2.5em;
+}
+
+a {
+    color: var(--clr-primary-6);
+}
+
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--clr-primary-3);
+    font-family: Lato-bold;
+    padding: 0;
+}

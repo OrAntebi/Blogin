@@ -1,0 +1,124 @@
+/* Mobile */
+
+@media (width < 800px) {
+
+    .main-nav {
+        position: fixed;
+        top: 0;
+        right: 0;
+
+        height: 100%;
+        width: 40%;
+
+        transform: translateX(100%);
+        transition: 300ms linear;
+        background-color: #cccccce5;
+
+        ul {
+            height: 100%;
+            flex-direction: column;
+
+            li {
+                display: block;
+                width: 100%;
+                min-width: 135px;
+
+                border: 1px solid rgba(0, 0, 0, 0.3);
+                transition: box-shadow 0.2s linear;
+
+                a {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    height: 100px;
+                }
+            }
+        }
+    }
+
+    body.openedMenu {
+        .main-nav {
+            transform: translateX(0%);
+        }
+
+        .overlay {
+            opacity: 1;
+            pointer-events:all;
+            cursor: pointer;
+        }
+    }
+
+    .menu-icon {
+        display: flex;
+        justify-self: end;
+        justify-content: center;
+        align-self: center;
+        align-items: center;
+
+        padding: 0.6em;
+
+        font-size: 1.5rem;
+        cursor: pointer;
+        color: var(--clr-primary-5);
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 50%;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        transition: all 0.3s ease;
+
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+            transform: scale(1.1);
+        }
+
+        &:active {
+            transform: scale(0.95);
+        }
+    }
+
+    .main-content>.card:not(:last-child) {
+        border-block-end: var(--booder);
+    }
+
+    .card {
+        padding: 0 20px 20px 20px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+}
+
+/* Tablet */
+
+@media (width >=800px) {
+    .card {
+        flex-direction: column;
+
+    }
+
+    .menu-icon {
+        display: none !important;
+    }
+
+}
+
+/* Desktop */
+
+@media (width >=1080px) {
+
+    .card {
+        flex-direction: row;
+    }
+
+    .card .card-img {
+        width: calc(50% - var(--gap) / 2);
+    }
+
+    .card .card-details {
+        width: calc(50% - var(--gap) / 2 - 25px);
+    }
+
+}

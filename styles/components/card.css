@@ -1,0 +1,44 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--gap);
+
+    margin-block: var(--margin-block);
+}
+
+.card .card-details {
+    max-width: 540px;
+
+    p:not(:last-of-type) {
+        margin-block-end: 1.25em;
+    }
+}
+
+.card .continue-reading-btn {
+    padding-inline: 1.5625em;
+    padding-block: 0.625em;
+
+    font-size: 1rem;
+    line-height: 1;
+    border: 1px solid var(--clr-primary-3);
+    border-radius: 30px;
+
+    transition: color 300ms ease, border-color 300ms ease;
+    
+    &:hover {
+        color: var(--clr-secondry);
+        border-color: var(--clr-secondry);
+    }
+
+    &::after {
+        content: '';
+        transition: 300ms ease;
+    }
+    
+    &:hover::after {
+        content: '➜';
+        margin-inline-start: 10px;
+        color: var(--clr-secondry);
+    }
+}

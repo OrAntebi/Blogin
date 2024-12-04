@@ -1,0 +1,10 @@
+.logo {
+    color: var(--clr-primary-5);
+    font-size: 2.5rem;
+    font-family: Eurofurence, sans-serif;
+}
+
+.logo::after {
+    content: '.';
+    color: var(--clr-secondry);
+}

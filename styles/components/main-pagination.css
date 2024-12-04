@@ -1,0 +1,21 @@
+.main-pagination {
+    border-block-start: var(--booder);
+    padding: 1.875em;
+
+
+    button {
+        text-transform: uppercase;
+        font-size: 1.125em;
+        color: var(--clr-primary-1);
+    }
+
+    .previous-btn::before {
+        content: '←';
+        margin-inline-end: 10px;
+    }
+
+    .next-btn::After {
+        content: '→';
+        margin-inline-start: 10px;
+    }
+}

@@ -1,0 +1,32 @@
+.social-links {
+    gap: 20px;
+}
+
+.social-links > * {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 40px;
+    aspect-ratio: 1;
+
+    transition: 300ms ease;
+    background-color: var(--clr-primary-4);
+    cursor: pointer;
+
+    &:nth-child(1):hover {
+        background-color: RGBA(80.73151677846909,111.14007666707039,173.00000488758087,1);
+    }
+
+    &:nth-child(2):hover {
+        background-color: rgb(29, 161, 242);
+    }
+
+    &:nth-child(3):hover {
+        background-color: rgb(24, 119, 242);
+    }
+
+    &:nth-child(4):hover {
+        background-color: rgb(225, 77, 152);
+    }
+}
