@@ -15,6 +15,7 @@
 
     /* header vars */
     --shadow-color: rgba(30.00000011175871,30.00000011175871,30.00000011175871,1);
+    --nav-border: 1.5px solid rgba(0, 0, 0, 0.3);
 
     /* cards vars */
     --margin-block: 80px;

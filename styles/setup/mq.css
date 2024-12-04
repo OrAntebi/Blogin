@@ -17,13 +17,14 @@
         ul {
             height: 100%;
             flex-direction: column;
+            border-inline-start: var(--nav-border);
 
             li {
                 display: block;
                 width: 100%;
                 min-width: 135px;
-
-                border: 1px solid rgba(0, 0, 0, 0.3);
+                border: none;
+                border-block-end: var(--nav-border);
                 transition: box-shadow 0.2s linear;
 
                 a {
