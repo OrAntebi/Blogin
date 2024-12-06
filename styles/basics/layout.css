@@ -15,19 +15,3 @@
 .main-layout>*.full {
     grid-column: 1 / -1;
 }
-
-.main-layout>*.mid-left {
-    grid-column: 2/3;
-}
-
-.main-layout>*.mid-right {
-    grid-column: 3/4;
-}
-
-.main-layout.main-header {
-    grid-template-columns:
-    minmax(40px, 1fr)
-    minmax(auto, 450px)
-    minmax(auto, 530px)
-    minmax(40px, 1fr);
-}

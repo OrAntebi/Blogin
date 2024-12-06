@@ -2,6 +2,10 @@
 
 @media (max-width: 799px) {
 
+    html {
+        font-size: 12px;
+    }
+
     .main-nav {
         position: fixed;
         top: 0;
@@ -34,6 +38,7 @@
                     align-items: center;
 
                     height: 100px;
+                    width: 100%;
                 }
             }
         }
@@ -60,6 +65,7 @@
         align-items: center;
 
         padding: 0.6em;
+        margin: 30px;
 
         font-size: 1.5rem;
         cursor: pointer;
@@ -84,7 +90,6 @@
         border-block-end: var(--booder);
     }
     
-
     .card {
         padding: 0 20px 20px 20px;
 
@@ -102,6 +107,11 @@
 /* Tablet */
 
 @media (min-width: 800px) {
+
+    html {
+        font-size: 14px;
+    }
+
     .card {
         flex-direction: column;
 
@@ -117,12 +127,19 @@
 
 @media (min-width: 1080px) {
 
+    html {
+        font-size: 16px;
+    }
+
     .card {
         flex-direction: row;
     }
 
     .card .card-img {
         width: calc(50% - var(--gap) / 2);
+        align-self: stretch;
+        object-fit: cover;
+        
     }
 
     .card .card-details {

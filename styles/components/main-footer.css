@@ -17,6 +17,8 @@
 .main-footer p {
     text-align: center;
 
+    margin-block-end: 2.692em;
+
     font-size: 0.8125em;
     color: var(--clr-primary-2);
     text-wrap: pretty;
