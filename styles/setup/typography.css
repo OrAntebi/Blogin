@@ -13,3 +13,43 @@
     font-family: Eurofurence;
     src: url('../../fonts/Eurofurence/eurof55.ttf');
 }
+
+/* Font Awesome */
+
+@font-face {
+    font-family: Fa-brand;
+    src: url('../../fonts/Fa/fa-brands-400.ttf');
+}
+
+@font-face {
+    font-family: Fa-solid;
+    src: url('../../fonts/Fa/fa-solid-900.ttf');
+}
+
+.fa-brand::before {
+    font-family: Fa-brand;
+}
+
+.fa-solid::before {
+    font-family: Fa-solid;
+}
+
+.fa-solid.main-menu::before {
+    content: '\f0c9';
+}
+
+.fa-brand.facebook::before {
+    content: '\f39e';
+}
+
+.fa-brand.twitter::before {
+    content: '\f099';
+}
+
+.fa-brand.behance::before {
+    content: '\f1b4';
+}
+
+.fa-brand.dribbble::before {
+    content: '\f17d';
+}

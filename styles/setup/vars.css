@@ -20,5 +20,6 @@
     /* cards vars */
     --margin-block: 80px;
     --gap: 40px;
+    --mobile-gap: 20px;
     --booder: 1px solid var(--clr-primary-4);
 }

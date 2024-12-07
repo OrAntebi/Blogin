@@ -3,16 +3,17 @@
 }
 
 .social-links > * {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
     width: 40px;
     aspect-ratio: 1;
 
     transition: 300ms ease;
+    color: var(--clr-primary-6);
     background-color: var(--clr-primary-4);
     cursor: pointer;
+
+    &:active {
+        scale: 1.1;
+    }
 
     &:nth-child(1):hover {
         background-color: RGBA(80.73151677846909,111.14007666707039,173.00000488758087,1);

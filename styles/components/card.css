@@ -1,7 +1,7 @@
 .card {
     display: flex;
     flex-direction: column;
-    gap: var(--gap);
+    gap: var(--mobile-gap);
 
     margin-block: var(--margin-block);
 }
@@ -10,7 +10,7 @@
     max-width: 540px;
 
     .card-title {
-        margin-block-end: 2.142857142857143em;
+        margin-block-end: 1.75rem;
 
         color: var(--clr-primary1);
         font-family: Lato-bold;
@@ -35,8 +35,6 @@
     line-height: 1;
     border: 1px solid var(--clr-primary-3);
     border-radius: 30px;
-
-    transition: color 300ms ease, border-color 300ms ease;
 
     &:hover {
         color: var(--clr-secondry);

@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blogin</title>
-    <script src="https://kit.fontawesome.com/0ed047b375.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles/style.css">
 </head>
 
@@ -16,13 +15,21 @@
     <header class="main-header main-layout full">
         <div class="main-header-container flex align-center space-between">
             <div class="logo">Blogin</div>
-            <i class="menu-icon fa-solid fa-bars" onclick="onToggleMenu()"></i>
+            <span class="fa-solid main-menu" onclick="onToggleMenu()"></span>
             <nav class="main-nav">
                 <ul class="flex clean-list">
-                    <li onclick="onToggleMenu()"><a class="flex align-center justify-center active" href="#">Journal</a></li>
-                    <li onclick="onToggleMenu()"><a class="flex align-center justify-center" href="#">About</a></li>
-                    <li onclick="onToggleMenu()"><a class="flex align-center justify-center" href="#">Work</a></li>
-                    <li onclick="onToggleMenu()"><a class="flex align-center justify-center" href="#">Contact</a></li>
+                    <li onclick="onToggleMenu()">
+                        <a class="active flex align-center justify-center" href="#" onclick="onNavActive(this)">Journal</a>
+                    </li>
+                    <li onclick="onToggleMenu()">
+                        <a class="flex align-center justify-center" href="#" onclick="onNavActive(this)">About</a>
+                    </li>
+                    <li onclick="onToggleMenu()">
+                        <a class="flex align-center justify-center" href="#" onclick="onNavActive(this)">Work</a>
+                    </li>
+                    <li onclick="onToggleMenu()">
+                        <a class="flex align-center justify-center" href="#" onclick="onNavActive(this)">Contact</a>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -77,17 +84,27 @@
     <footer class="main-footer full flex align-center justify-center">
         <div class="logo">Blogin</div>
         <p class="footer-text">© 2014 Blogin.com - All Rights Reserved - Find more free Templates at Pixelhint.com</p>
-        <ul class="social-links flex clean-list align-center justify-center">
-            <li><img src="images/facebook-icon.png" alt="Facebook icon"></li>
-            <li><img src="images/twitter-icon.png" alt="Twitter icon"></li>
-            <li><img src="images/behance-icon.png" alt="Behance icon"></li>
-            <li><img src="images/dribbble-icon.png" alt="Dribbble icon"></li>
+        <ul class="social-links flex align-center justify-center clean-list ">
+            <li class="flex justify-center align-center"><span class="fa-brand facebook"></span></li>
+            <li class="flex justify-center align-center"><span class="fa-brand twitter"></span></li>
+            <li class="flex justify-center align-center"><span class="fa-brand behance"></span></li>
+            <li class="flex justify-center align-center"><span class="fa-brand dribbble"></span></li>
         </ul>
     </footer>
 
     <script>
         function onToggleMenu() {
-            document.body.classList.toggle('openedMenu')
+            if (window.innerWidth <= 600) {
+                document.body.classList.toggle('openedMenu');
+            }
+        }
+
+
+        function onNavActive(el) {
+            const navItems = document.querySelectorAll('.main-nav a')
+
+            navItems.forEach(item => item.classList.remove('active'))
+            el.classList.add('active')
         }
     </script>
 </body>
