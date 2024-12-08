@@ -20,24 +20,26 @@
                 <ul class="main-menu-list flex clean-list">
 
                     <li class="dropdown-container" onclick="onToggleMenu()">
-                        <a class="item active flex align-center justify-center" href="#" onclick="onNavActive(this)">Journal</a>
+                        <a class="item active flex align-center justify-center" href="#"
+                            onclick="onNavActive(this)">Journal</a>
                         <ul class="dropdown clean-list">
-                            <li><a href="#" onclick="onNavActive(this)">Option 1</a></li>
-                            <li><a href="#" onclick="onNavActive(this)">Option 2</a></li>
-                            <li><a href="#" onclick="onNavActive(this)">Option 3</a></li>
+                            <li><a href="index.html">October 2016</a></li>
+                            <li><a href="index.html">January 2017</a></li>
+                            <li><a href="index.html">April 2017</a></li>
                         </ul>
                     </li>
 
                     <li onclick="onToggleMenu()">
-                        <a class="item flex align-center justify-center" href="#" onclick="onNavActive(this)">About</a>
+                        <a class="item flex align-center justify-center" href="index.html" onclick="onNavActive(this)">About</a>
                     </li>
 
                     <li onclick="onToggleMenu()">
-                        <a class="item flex align-center justify-center" href="#" onclick="onNavActive(this)">Work</a>
+                        <a class="item flex align-center justify-center" href="index.html" onclick="onNavActive(this)">Work</a>
                     </li>
 
                     <li onclick="onToggleMenu()">
-                        <a class="item flex align-center justify-center" href="#" onclick="onNavActive(this)">Contact</a>
+                        <a class="item flex align-center justify-center" href="index.html"
+                            onclick="onNavActive(this)">Contact</a>
                     </li>
 
                 </ul>
@@ -95,10 +97,10 @@
         <div class="logo">Blogin</div>
         <p class="footer-text">© 2014 Blogin.com - All Rights Reserved - Find more free Templates at Pixelhint.com</p>
         <ul class="social-links flex align-center justify-center clean-list ">
-            <li class="flex justify-center align-center"><span class="fa-brand facebook"></span></li>
-            <li class="flex justify-center align-center"><span class="fa-brand twitter"></span></li>
-            <li class="flex justify-center align-center"><span class="fa-brand behance"></span></li>
-            <li class="flex justify-center align-center"><span class="fa-brand dribbble"></span></li>
+            <li class="flex justify-center align-center"><a class="fa-brand facebook" href="index.html"></a></li>
+            <li class="flex justify-center align-center"><a class="fa-brand twitter"></a></li>
+            <li class="flex justify-center align-center"><a class="fa-brand behance"></a></li>
+            <li class="flex justify-center align-center"><a class="fa-brand dribbble"></a></li>
         </ul>
     </footer>
 
@@ -117,9 +119,9 @@
             el.classList.add('active')
 
             const journalItem = el.closest('.dropdown-container').querySelector('a');
-        if (journalItem) {
-            journalItem.classList.add('active');
-        }
+            if (journalItem) {
+                journalItem.classList.add('active');
+            }
         }
     </script>
 </body>
