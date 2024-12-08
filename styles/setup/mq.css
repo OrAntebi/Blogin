@@ -87,7 +87,7 @@
     }
 
     .card .card-details {
-        padding: 0 50px;
+        padding: 0 30px;
 
         .card-title {
             margin-block-end: 1.75rem;
@@ -120,10 +120,6 @@
 
         .card-title {
             margin-block-end: 3.75rem;
-        }
-
-        p:last-of-type {
-            margin-block-end: 2rem;
         }
     }
 
