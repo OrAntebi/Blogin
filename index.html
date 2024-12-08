@@ -17,19 +17,29 @@
             <div class="logo">Blogin</div>
             <span class="fa-solid main-menu" onclick="onToggleMenu()"></span>
             <nav class="main-nav">
-                <ul class="flex clean-list">
-                    <li onclick="onToggleMenu()">
-                        <a class="active flex align-center justify-center" href="#" onclick="onNavActive(this)">Journal</a>
+                <ul class="main-menu-list flex clean-list">
+
+                    <li class="dropdown-container" onclick="onToggleMenu()">
+                        <a class="item active flex align-center justify-center" href="#" onclick="onNavActive(this)">Journal</a>
+                        <ul class="dropdown clean-list">
+                            <li><a href="#" onclick="onNavActive(this)">Option 1</a></li>
+                            <li><a href="#" onclick="onNavActive(this)">Option 2</a></li>
+                            <li><a href="#" onclick="onNavActive(this)">Option 3</a></li>
+                        </ul>
                     </li>
+
                     <li onclick="onToggleMenu()">
-                        <a class="flex align-center justify-center" href="#" onclick="onNavActive(this)">About</a>
+                        <a class="item flex align-center justify-center" href="#" onclick="onNavActive(this)">About</a>
                     </li>
+
                     <li onclick="onToggleMenu()">
-                        <a class="flex align-center justify-center" href="#" onclick="onNavActive(this)">Work</a>
+                        <a class="item flex align-center justify-center" href="#" onclick="onNavActive(this)">Work</a>
                     </li>
+
                     <li onclick="onToggleMenu()">
-                        <a class="flex align-center justify-center" href="#" onclick="onNavActive(this)">Contact</a>
+                        <a class="item flex align-center justify-center" href="#" onclick="onNavActive(this)">Contact</a>
                     </li>
+
                 </ul>
             </nav>
         </div>
@@ -105,6 +115,11 @@
 
             navItems.forEach(item => item.classList.remove('active'))
             el.classList.add('active')
+
+            const journalItem = el.closest('.dropdown-container').querySelector('a');
+        if (journalItem) {
+            journalItem.classList.add('active');
+        }
         }
     </script>
 </body>

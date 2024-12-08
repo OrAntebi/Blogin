@@ -18,7 +18,7 @@
         transition: grid-template-rows .6s;
         background-color: #cccccce5;
 
-        ul {
+        .main-menu-list {
             flex-direction: column;
 
             min-height: 0;
@@ -33,7 +33,7 @@
                 border-block-end: var(--nav-border);
                 transition: box-shadow 0.2s linear;
                 
-                a {
+                .item {
                     display: flex;
                     justify-content: center;
                     align-items: center;

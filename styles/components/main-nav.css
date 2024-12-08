@@ -1,27 +1,51 @@
-.main-nav ul {
+.main-nav .main-menu-list {
     height: 100%;
 }
 
-.main-nav ul li { 
+.main-nav .main-menu-list li {
     border: 1px solid rgba(0, 0, 0, 0.3);
-    
-    a {
+
+    .item {
         width: 8.125em;
         aspect-ratio: 1;
 
         font-family: Lato-bold;
-        text-decoration: none;
         transition: box-shadow 0.2s linear;
 
         &:hover {
             color: var(--clr-secondry);
             box-shadow: inset 0px -6px 0px rgba(88, 201, 58, 1);
         }
-        
+
         &.active {
             color: var(--clr-secondry);
             box-shadow: inset 0px -6px 0px rgba(88, 201, 58, 1);
             cursor: default;
         }
+    }
+}
+
+.dropdown-container {
+    position: relative;
+
+    &:hover .dropdown {
+        display: block;
+
+    }
+}
+
+.dropdown {
+    position: absolute;
+    left: 0;
+    right: 0;
+
+    display: none;
+    background-color: #ccc;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+    a {
+        display: grid;
+        place-content: center;
+        aspect-ratio: 2 / 1;
     }
 }
