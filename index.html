@@ -10,35 +10,34 @@
 
 <body class="main-layout">
 
-    <div class="overlay" onclick="onToggleMenu()"></div>
+    <div class="overlay" onclick="onToggleMenu(event)"></div>
 
     <header class="main-header main-layout full">
         <div class="main-header-container flex align-center space-between">
             <div class="logo">Blogin</div>
-            <span class="fa-solid main-menu" onclick="onToggleMenu()"></span>
+            <span class="main-menu fa-solid flex align-center justify-center" onclick="onToggleMenu(event)"></span>
             <nav class="main-nav">
                 <ul class="main-menu-list flex clean-list">
 
-                    <li class="dropdown-container" onclick="onToggleMenu()">
-                        <a class="item active flex align-center justify-center" href="#"
-                            onclick="onNavActive(this)">Journal</a>
+                    <li class="dropdown-container"> 
+                        <a class="item active flex align-center justify-center" href="#" onclick="onNavActive(this)">Journal</a>
                         <ul class="dropdown clean-list">
-                            <li><a href="index.html">October 2016</a></li>
-                            <li><a href="index.html">January 2017</a></li>
-                            <li><a href="index.html">April 2017</a></li>
+                            <li><a href="index.html" onclick="onNavActive(this)">October 2016</a></li>
+                            <li><a href="index.html" onclick="onNavActive(this)">January 2017</a></li>
+                            <li><a href="index.html" onclick="onNavActive(this)">April 2017</a></li>
                         </ul>
                     </li>
 
-                    <li onclick="onToggleMenu()">
-                        <a class="item flex align-center justify-center" href="index.html" onclick="onNavActive(this)">About</a>
+                    <li onclick="onToggleMenu(event)">
+                        <a class="item flex align-center justify-center" href="#" onclick="onNavActive(this)">About</a>
                     </li>
 
-                    <li onclick="onToggleMenu()">
-                        <a class="item flex align-center justify-center" href="index.html" onclick="onNavActive(this)">Work</a>
+                    <li onclick="onToggleMenu(event)">
+                        <a class="item flex align-center justify-center" href="#" onclick="onNavActive(this)">Work</a>
                     </li>
 
-                    <li onclick="onToggleMenu()">
-                        <a class="item flex align-center justify-center" href="index.html"
+                    <li onclick="onToggleMenu(event)">
+                        <a class="item flex align-center justify-center" href="#"
                             onclick="onNavActive(this)">Contact</a>
                     </li>
 
@@ -48,6 +47,7 @@
     </header>
 
     <main class="main-content">
+
         <div class="card">
             <img src="images/001.png" alt="" class="card-img">
             <section class="card-details flex column">
@@ -57,9 +57,10 @@
                     ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 <p class="card-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
                     fugiat nulla pariatur...</p>
-                <button class="continue-reading-btn">Continue Reading</button>
+                <button class="continue-reading-btn" onclick="onContinueReadingClick()">Continue Reading</button>
             </section>
         </div>
+
         <div class="card">
             <img src="images/002.png" alt="" class="card-img">
             <section class="card-details flex column">
@@ -70,9 +71,10 @@
                 <p class="card-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
                     fugiat
                     nulla pariatur...</p>
-                <button class="continue-reading-btn">Continue Reading</button>
+                <button class="continue-reading-btn" onclick="onContinueReadingClick()">Continue Reading</button>
             </section>
         </div>
+
         <div class="card">
             <img src="images/003.png" alt="" class="card-img">
             <section class="card-details flex column">
@@ -83,7 +85,7 @@
                 <p class="card-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
                     fugiat
                     nulla pariatur...</p>
-                <button class="continue-reading-btn">Continue Reading</button>
+                <button class="continue-reading-btn" onclick="onContinueReadingClick()">Continue Reading</button>
             </section>
         </div>
 
@@ -91,7 +93,18 @@
             <button class="previous-btn">Previous</button>
             <button class="next-btn">Next</button>
         </section>
+
     </main>
+
+    <dialog class="modal-container">
+        <form action="dialog" class="modal-form flex column space-between">
+            <h2 class="modal-title">Join us to get access to the latest stories!</h2>
+            <label class="modal-label flex column">Email Address
+                <input type="email" class="modal-input" placeholder="Enter your email here">
+            </label>
+            <button type="button" class="modal-btn" onclick="onCloseModal()">Close</button>
+        </form>
+    </dialog>
 
     <footer class="main-footer full flex align-center justify-center">
         <div class="logo">Blogin</div>
@@ -107,23 +120,31 @@
     <script>
         function onToggleMenu() {
             if (window.innerWidth <= 600) {
-                document.body.classList.toggle('openedMenu');
+                document.body.classList.toggle('openedMenu')
             }
         }
+
+
 
 
         function onNavActive(el) {
-            const navItems = document.querySelectorAll('.main-nav a')
+
+            const navItems = document.querySelectorAll('.main-nav .item')
 
             navItems.forEach(item => item.classList.remove('active'))
             el.classList.add('active')
+        }
 
-            const journalItem = el.closest('.dropdown-container').querySelector('a');
-            if (journalItem) {
-                journalItem.classList.add('active');
-            }
+        function onContinueReadingClick() {
+            document.querySelector('.modal-container').showModal()
+        }
+
+        function onCloseModal() {
+            document.querySelector('.modal-container').close()
+            document.querySelector('.modal-input').value = ''
         }
     </script>
+
 </body>
 
 </html>

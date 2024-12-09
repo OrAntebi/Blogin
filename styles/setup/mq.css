@@ -58,12 +58,6 @@
     }
 
     .main-menu {
-        display: flex;
-        justify-self: end;
-        justify-content: center;
-        align-self: center;
-        align-items: center;
-
         padding: 0.6em;
         margin: 30px;
 
@@ -110,6 +104,22 @@
         display: none;
     }
 
+    .dropdown-container {
+        position: relative;
+    
+        &:hover .dropdown {
+            display: block;
+            top: auto;
+            height: auto;
+    
+        }
+
+        .dropdown a {
+            aspect-ratio: 2 / 1;
+        }
+    }
+    
+
     .card {
         flex-direction: row;
 
@@ -136,7 +146,7 @@
 @media (min-width: 840px) {
 
     html {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .card {
@@ -148,10 +158,6 @@
 /* Large */
 
 @media (min-width: 1080px) {
-
-    html {
-        font-size: 16px;
-    }
 
     .card .card-details {
         width: calc(50% - var(--gap) / 2 - 25px);
