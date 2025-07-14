@@ -27,7 +27,7 @@ The goal was to accurately reproduce the layout, spacing, typography, and overal
 
 ## 🌐 Live Demo
 
-👉 [Blogin Landing Page Live](https://orantebi.github.io/Blogin/ןindex.html)  
+👉 [Blogin Landing Page Live](https://orantebi.github.io/Blogin/index.html)  
 
 ---
 
@@ -36,17 +36,13 @@ The goal was to accurately reproduce the layout, spacing, typography, and overal
 1. Clone or download the repository:
    
    ```bash
-   git clone https://github.com/OrAntebi/Blogin-main.git
+   git clone https://github.com/OrAntebi/Blogin.git
 
 ---
 
 ## 📸 Screenshot
 
 Here are some screenshots from the project:
-
-## 🖼️ Images Gallery
-
-Here are some visuals from the project:
 
 <p align="center">
   <p align="center">
